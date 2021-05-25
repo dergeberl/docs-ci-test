@@ -27,7 +27,7 @@ jobs:
 #        cd gh-pages
 #        git rm ./*
     - run: |
-        cp main/_docpress/* gh-pages/
+        cp -r main/_docpress/* gh-pages/
         cd gh-pages
         git add .
         git commit -m "update docs"
