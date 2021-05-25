@@ -18,4 +18,11 @@ jobs:
         path: "main"
     - run: |
         npm install docpress
-
+        npm install markdown-it-emoji
+    - run: |
+        cd main
+        docpress b
+        ls -l
+        ls -l _docpress
+    - run: |
+        ls -l
