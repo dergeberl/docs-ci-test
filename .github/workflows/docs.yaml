@@ -1,0 +1,24 @@
+name: golang
+
+on:
+  push:
+    branches: 
+    - *
+    - main
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: "gh-pages"
+        path: "gh-pages"
+    - uses: actions/checkout@v2
+      with:
+        path: "main"
+    - run: |
+        ls
+        ls gh-pages
+        ls main
+

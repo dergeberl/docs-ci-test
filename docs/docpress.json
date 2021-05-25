@@ -1,0 +1,8 @@
+{
+  "github": "dergeberl/docs-ci-test",
+  "markdown": {
+    "plugins": {
+      "emoji": {}
+    }
+  }
+}
