@@ -15,6 +15,12 @@
             "source": "docs/test1.md",
             "url": "test1.html",
             "slug": "test1"
+          },
+          {
+            "title": "test2",
+            "source": "docs/test2.md",
+            "url": "test2.html",
+            "slug": "test2"
           }
         ]
       }
@@ -32,11 +38,18 @@
       "title": "test1 - docs-ci-test",
       "pageTitle": "test1",
       "slug": "test1"
+    },
+    "test2.html": {
+      "source": "docs/test2.md",
+      "title": "test2 - docs-ci-test",
+      "pageTitle": "test2",
+      "slug": "test2"
     }
   },
   "sources": {
     "README.md": "index.html",
     "docs/test1.md": "test1.html",
+    "docs/test2.md": "test2.html",
     "docs/docpress.json": "docpress.json"
   }
 }
