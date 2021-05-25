@@ -1,0 +1,55 @@
+{
+  "toc": {
+    "sections": [
+      {
+        "title": "docs-ci-test",
+        "source": "README.md",
+        "url": "index.html",
+        "slug": "index"
+      },
+      {
+        "title": "test",
+        "sections": [
+          {
+            "title": "test1",
+            "source": "docs/test1.md",
+            "url": "test1.html",
+            "slug": "test1"
+          }
+        ]
+      },
+      {
+        "title": "test2",
+        "source": "docs/test2.md",
+        "url": "test2.html",
+        "slug": "test2"
+      }
+    ]
+  },
+  "index": {
+    "index.html": {
+      "source": "README.md",
+      "title": "docs-ci-test",
+      "pageTitle": "docs-ci-test",
+      "slug": "index"
+    },
+    "test1.html": {
+      "source": "docs/test1.md",
+      "title": "test1 - docs-ci-test",
+      "pageTitle": "test1",
+      "slug": "test1"
+    },
+    "test2.html": {
+      "source": "docs/test2.md",
+      "title": "test2 - docs-ci-test",
+      "pageTitle": "test2",
+      "slug": "test2"
+    }
+  },
+  "sources": {
+    "README.md": "index.html",
+    "docs/test1.md": "test1.html",
+    "docs/test2.md": "test2.html",
+    "docs/docpress.json": "docpress.json"
+  }
+}
