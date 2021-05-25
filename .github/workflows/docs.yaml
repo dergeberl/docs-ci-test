@@ -17,7 +17,5 @@ jobs:
       with:
         path: "main"
     - run: |
-        ls
-        ls gh-pages
-        ls main
+        npm install -g docpress
 
