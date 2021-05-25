@@ -23,9 +23,9 @@ jobs:
         cd main
         ../node_modules/docpress/bin/docpress b
         ls -l _docpress
-    - run: |
-        cd gh-pages
-        git rm ./*
+#    - run: |
+#        cd gh-pages
+#        git rm ./*
     - run: |
         cp main/_docpress/* gh-pages/
         cd gh-pages
