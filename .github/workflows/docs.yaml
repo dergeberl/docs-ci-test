@@ -17,5 +17,5 @@ jobs:
       with:
         path: "main"
     - run: |
-        npm install -g docpress
+        npm install docpress
 
