@@ -16,17 +16,21 @@ jobs:
     - uses: actions/checkout@v2
       with:
         path: "main"
-    - run: |
+    - name: install-docpress
+      run: |
         npm install docpress
         npm install markdown-it-emoji
-    - run: |
+    - name: generate-site
+      run: |
         cd main
         ../node_modules/docpress/bin/docpress b
         ls -l _docpress
-#    - run: |
-#        cd gh-pages
-#        git rm ./*
-    - run: |
+    - name: clean-branch
+      run: |
+        cd gh-pages
+        git rm ./*
+    - name: update-branche
+      run: |
         cp -r main/_docpress/* gh-pages/
         cd gh-pages
         git config --global user.name 'github action'
