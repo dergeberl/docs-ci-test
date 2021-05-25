@@ -21,7 +21,7 @@ jobs:
         npm install markdown-it-emoji
     - run: |
         cd main
-        docpress b
+        ../node_modules/docpress/bin/docpress b
         ls -l
         ls -l _docpress
     - run: |
