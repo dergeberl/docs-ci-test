@@ -28,7 +28,7 @@ jobs:
     - name: clean-branch
       run: |
         cd gh-pages
-        git rm ./*
+        git rm -rf ./*
     - name: update-branche
       run: |
         cp -r main/_docpress/* gh-pages/
